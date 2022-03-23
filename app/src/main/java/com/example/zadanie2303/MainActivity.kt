@@ -20,7 +20,22 @@ class MainActivity : AppCompatActivity() {
         val turystyka = findViewById<CheckBox>(R.id.checkBox3)
         val gry = findViewById<CheckBox>(R.id.checkBox4)
 
-
+        findViewById<Button>(R.id.button).setOnClickListener {
+            mezczyzna.isEnabled = false;
+            kobieta.isEnabled = false;
+            turystyka.isEnabled = false;
+            sport.isEnabled = false;
+            muzyka.isEnabled = false;
+            gry.isEnabled = false;
+        }
+        findViewById<Button>(R.id.button2).setOnClickListener {
+            mezczyzna.isEnabled = true;
+            kobieta.isEnabled = true;
+            turystyka.isEnabled = true;
+            sport.isEnabled = true;
+            muzyka.isEnabled = true;
+            gry.isEnabled = true;
+        }
 
     }
 
